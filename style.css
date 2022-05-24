@@ -7,6 +7,10 @@ body {
     color: white;
 }
 
+.heading {
+    text-align: center;
+}
+
 .card {
     text-align: center;
 }
@@ -16,7 +20,7 @@ body {
     border: none;
     border-style: none;
     background-color: white;
-    height: 30px;
+    height: 35px;
     width: 250px;
 }
 
@@ -33,5 +37,5 @@ body {
 
 footer {
     text-align: center;
-    padding-top: 10%;
+    padding-top: 30%;
 }
