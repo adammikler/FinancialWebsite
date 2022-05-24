@@ -20,7 +20,7 @@ let quote = {
         const { "09.change": change } = data.GlobalQuote;
         const { "10. changepercent": percent} = data.GlobalQuote;
 
-        document.querySelector(".symbol").innerText = "Stock Symbol: $" + symbol;
+        document.querySelector(".symbol").innerText = "Stock Symbol: " + symbol;
         document.querySelector(".open").innerText = "Open Price: $" + open;
         document.querySelector(".high").innerText = "High Price: $" + high;
         document.querySelector(".low").innerText = "Low Price: $" + low;
