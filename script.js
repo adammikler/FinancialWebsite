@@ -10,6 +10,7 @@ let quote = {
             .then((response) => response.json())
             .then((data) => this.displayData(data));
     },
+
     displayData: function(data) {
         data = JSON.parse(JSON.stringify(data).replace(/\s(?=\w+":)/g, ""));
         const { "01.symbol": symbol } = data.GlobalQuote;
@@ -27,7 +28,7 @@ let quote = {
         document.querySelector(".price").innerText = "$" + price;
         document.querySelector(".change").innerText = "$" + change;
         document.querySelector(".percent").innerText = percent;
-        
+
         if ((change / Math.abs(change)) == -1) {
             var priceChange = document.getElementById("priceChange");
             priceChange.classList.add("red");
