@@ -20,11 +20,23 @@ let financials = {
         const { ProfitMargin } = data;
         const { Symbol } = data;
 
+        let marketRound = MarketCapitalization.toString().length;
+        if (marketRound < 7) {
+            document.getElementById("marketCap").innerText = "$" + MarketCapitalization;
+        } else if (marketRound >= 7 && marketRound < 10) {
+            document.getElementById("marketCap").innerText = "$" + MarketCapitalization / 1000000 + "M"
+        } else if (marketRound >= 10 && marketRound < 13) {
+            document.getElementById("marketCap").innerText = "$" + MarketCapitalization / 1000000000 + "B"
+        } else if (marketRound >= 13 && marketRound < 14) {
+            document.getElementById("marketCap").innerText = "$" + MarketCapitalization / 1000000000000 + "T"
+        }
+    
+        console.log(marketRound);
+
         document.getElementById("symbol").innerText = Symbol;
         document.getElementById("PERatio").innerText = PERatio;
-        document.getElementById("EPS").innerText = EPS;
+        document.getElementById("EPS").innerText = "$" + EPS;
         document.getElementById("PEG").innerText = PEGRatio;
-        document.getElementById("marketCap").innerText = "$" + MarketCapitalization;
         document.getElementById("BookValue").innerText = "$" + BookValue;
         document.getElementById("DividendPerShare").innerText = "$" + DividendPerShare;
         document.getElementById("ProfitMargin").innerText = ProfitMargin;
