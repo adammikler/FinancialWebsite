@@ -27,6 +27,19 @@ let quote = {
         document.querySelector(".price").innerText = "$" + price;
         document.querySelector(".change").innerText = "$" + change;
         document.querySelector(".percent").innerText = percent;
+        
+        if ((change / Math.abs(change)) == -1) {
+            var priceChange = document.getElementById("priceChange");
+            priceChange.classList.add("red");
+            var percentChange = document.getElementById("percentChange");
+            percentChange.classList.add("red");
+        } else if ((change / Math.abs(change)) == 1) {
+            var priceChange = document.getElementById("priceChange");
+            priceChange.classList.add("green");
+            var percentChange = document.getElementById("percentChange");
+            percentChange.classList.add("green");
+        }
+
     },
     search: function () {
         this.fetchQuote(document.querySelector(".search-bar").value);
