@@ -43,6 +43,30 @@ body {
     cursor: pointer;
 }
 
+.menu{
+    display: flex;
+    justify-content: space-between;
+    width: 18%;
+    margin: auto;
+}
+
+.price-button {
+    background-color: #404957;
+    border: none;
+    color: white;
+    width: 40%;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.Financials-button {
+    background-color: #3882F6;
+    border: none;
+    color: white;
+    width: 40%;
+    border-radius: 5px 5px 0px 0px;
+    cursor: pointer;
+}
+
 .symbol {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -52,7 +76,7 @@ body {
     height: 35%;
     width: 20%;
     margin: auto;
-    padding: 20px;
+    padding: 10px 20px 20px 20px;
     background-color: #404957;
     border-radius: 5px;
 }
