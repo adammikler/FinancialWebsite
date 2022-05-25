@@ -50,21 +50,21 @@ body {
     margin: auto;
 }
 
-.price-button {
-    background-color: #404957;
-    border: none;
-    color: white;
-    width: 40%;
-    border-radius: 5px 5px 0px 0px;
-}
-
-.Financials-button {
-    background-color: #3882F6;
+.menu-button {
     border: none;
     color: white;
     width: 40%;
     border-radius: 5px 5px 0px 0px;
     cursor: pointer;
+}
+
+.current-page {
+    background-color: #404957;
+}
+
+
+.second-button {
+    background-color: #3882F6;
 }
 
 .symbol {

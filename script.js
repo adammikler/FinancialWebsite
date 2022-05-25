@@ -43,19 +43,19 @@ let quote = {
 
     },
     search: function () {
-        this.fetchQuote(document.querySelector(".search-bar").value);
+        this.fetchQuote(document.getElementById("index-search").value);
     },
     clearSearch: function() {
-        document.querySelector(".search-bar").value = "";
+        document.getElementById("index-search").value = "";
     }
 };
 
-document.querySelector(".button").addEventListener("click", function () {
+document.getElementById("index-button").addEventListener("click", function () {
     quote.search();
     quote.clearSearch();
 });
 
-document.querySelector(".search-bar").addEventListener("keyup", function (event) {
+document.getElementById("index-search").addEventListener("keyup", function (event) {
     if (event.key == "Enter") {
         quote.search();
         quote.clearSearch();

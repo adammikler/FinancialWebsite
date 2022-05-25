@@ -14,13 +14,13 @@
 <body>
     <div class="card">
         <div class="search">
-            <input type="text" class="search-bar" placeholder="Enter a ticker">
-            <button class="button">Search</button>
+            <input type="text" class="search-bar" id="index-search" placeholder="Enter a ticker">
+            <button class="button" id="index-button">Search</button>
         </div>
         <h2 class="symbol"></h2>
         <div class="menu">
-            <button class="price-button ">Current Price</button>
-            <button class="Financials-button" onclick="window.location.href='./financials.html';">Financials</button>
+            <button class="menu-button current-page">Current Price</button>
+            <button class="menu-button second-button" onclick="window.location.href='./financials.html';" id="Finance-button">Financials</button>
         </div>
         <div class="quote">
             <div class="box">

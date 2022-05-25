@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FinanceWebsite</title>
     <link rel="stylesheet" href="style.css">
-    <script src="./script.js" defer></script>
+    <script src="./finance.js" defer></script>
 </head>
 <header>
     <h1 class="heading">Stock Quote</h1>
@@ -14,38 +14,44 @@
 <body>
     <div class="card">
         <div class="search">
-            <input type="text" class="search-bar" placeholder="Enter a ticker">
-            <button class="button">Search</button>
+            <input type="text" class="finance-search-bar search-bar" id="finance-search-bar" placeholder="Enter a ticker">
+            <button class="finance-button button" id="finance-button">Search</button>
         </div>
-        <h2 class="symbol"></h2>
+
+        <h2 class="symbol" id="symbol"></h2>
+
         <div class="menu">
-            <button class="price-button" onclick="window.location.href='./index.html';">Current Price</button>
-            <button class="Financials-button">Financials</button>
+            <button class="menu-button second-button" onclick="window.location.href='./index.html';">Current Price</button>
+            <button class="menu-button current-page">Financials</button>
         </div>
         <div class="quote">
             <div class="box">
-                <div class="items">Current Price:</div>
-                <div class="price items"></div>
+                <div class="items">PE:</div>
+                <div class="items" id="PERatio"></div>
             </div>
             <div class="box">
-                <div class="items">Open Price:</div>
-                <div class="open items"></div>
+                <div class="items">EPS:</div>
+                <div class="items" id="EPS"></div>
             </div>
             <div class="box">
-                <div class="items">High Price:</div>
-                <div class="high items"></div>
+                <div class="items">Market Cap:</div>
+                <div class="marketCap items" id="marketCap"></div>
             </div>
             <div class="box">
-                <div class="items">Low Price:</div>
-                <div class="low items"></div>
+                <div class="items">Book Value:</div>
+                <div class="items" id="BookValue"></div>
             </div>
             <div class="box">
-                <div class="items">Price Change:</div>
-                <div class="change items" id="priceChange"></div>
+                <div class="items">Dividend Per Share:</div>
+                <div class="items" id="DividendPerShare"></div>
             </div>
             <div class="box">
-                <div class="items">Percent Change:</div>
-                <div class="percent items" id="percentChange"></div>
+                <div class="items">PEG:</div>
+                <div class="items" id="PEG"></div>
+            </div>
+            <div class="box">
+                <div class="items">Profit Margin:</div>
+                <div class="items" id="ProfitMargin"></div>
             </div>
         </div>
     </div>
