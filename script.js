@@ -20,13 +20,13 @@ let quote = {
         const { "09.change": change } = data.GlobalQuote;
         const { "10. changepercent": percent} = data.GlobalQuote;
 
-        document.querySelector(".symbol").innerText = "Stock Symbol: " + symbol;
-        document.querySelector(".open").innerText = "Open Price: $" + open;
-        document.querySelector(".high").innerText = "High Price: $" + high;
-        document.querySelector(".low").innerText = "Low Price: $" + low;
-        document.querySelector(".price").innerText = "Price: $" + price;
-        document.querySelector(".change").innerText = "Price Change: $" + change;
-        document.querySelector(".percent").innerText = "Percent Change: " + percent;
+        document.querySelector(".symbol").innerText = symbol;
+        document.querySelector(".open").innerText = "$" + open;
+        document.querySelector(".high").innerText = "$" + high;
+        document.querySelector(".low").innerText = "$" + low;
+        document.querySelector(".price").innerText = "$" + price;
+        document.querySelector(".change").innerText = "$" + change;
+        document.querySelector(".percent").innerText = percent;
     },
     search: function () {
         this.fetchQuote(document.querySelector(".search-bar").value);
