@@ -10,7 +10,7 @@ let quote = {
             .then((response) => response.json())
             .then((data) => this.displayData(data));
     },
-
+/*converst data into invdividual variables and updates page*/
     displayData: function(data) {
         data = JSON.parse(JSON.stringify(data).replace(/\s(?=\w+":)/g, ""));
         const { "01.symbol": symbol } = data.GlobalQuote;
@@ -50,6 +50,7 @@ let quote = {
     }
 };
 
+/*adds event listeners to the seach bar and search button that real the quote functions and clears searchbar*/
 document.getElementById("index-button").addEventListener("click", function () {
     quote.search();
     quote.clearSearch();
@@ -61,5 +62,5 @@ document.getElementById("index-search").addEventListener("keyup", function (even
         quote.clearSearch();
     }
 });
-
+/*Loads in filler data by running function with googl*/
 quote.fetchQuote("googl");

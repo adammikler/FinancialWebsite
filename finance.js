@@ -10,6 +10,7 @@ let financials = {
             .then((response) => response.json())
             .then((data) => this.displayData(data));
     },
+    /*converst data into invdividual variables and updates page*/
     displayData: function(data) {
         const { PERatio } = data;
         const { EPS } = data;
@@ -48,7 +49,7 @@ let financials = {
         document.getElementById("finance-search-bar").value = "";
     }
 };
-
+/*adds event listeners to the seach bar and search button that real the quote functions and clears searchbar*/
 document.getElementById("finance-button").addEventListener("click", function () {
     financials.search();
     financials.clearSearch();
@@ -60,5 +61,5 @@ document.getElementById("finance-search-bar").addEventListener("keyup", function
         financials.clearSearch();
     }
 });
-
+/*Loads in filler data by running function with googl*/
 financials.fetchFinancials("googl");
