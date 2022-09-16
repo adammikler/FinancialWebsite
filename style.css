@@ -14,12 +14,14 @@ body {
 
 .card {
     text-align: center;
+    position: absolute;
+    left: 35%;
+    width: 30%;
 }
 
 .search {
     display: flex;
     height: 35%;
-    width: 20%;
     margin: auto;
     justify-content: space-between;
 }
@@ -51,14 +53,12 @@ body {
 .menu{
     display: flex;
     justify-content: space-between;
-    width:  22%;
     margin: auto;
 }
 
 .menu-button {
     border: none;
     color: white;
-    width: 130px;
     height: 30px;
     font-size: 1.1em;
     border-radius: 5px 5px 0px 0px;
@@ -82,7 +82,6 @@ body {
 
 .quote {
     height: 35%;
-    width: 20%;
     margin: auto;
     padding: 10px 20px 20px 20px;
     background-color: #404957;
@@ -96,7 +95,7 @@ body {
 
 .items {
     margin: 2% 0%;
-    font-size: 1.4vw;
+    font-size: 1.1em;
 }
 
 .red {
@@ -116,5 +115,5 @@ body {
 
 footer {
     text-align: center;
-    padding-top: 30%;
+    padding-top: 70%;
 }
