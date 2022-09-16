@@ -32,13 +32,9 @@ let quote = {
         if ((change / Math.abs(change)) == -1) {
             var priceChange = document.getElementById("priceChange");
             priceChange.classList.add("red");
-            var percentChange = document.getElementById("percentChange");
-            percentChange.classList.add("red");
         } else if ((change / Math.abs(change)) == 1) {
             var priceChange = document.getElementById("priceChange");
             priceChange.classList.add("green");
-            var percentChange = document.getElementById("percentChange");
-            percentChange.classList.add("green");
         }
 
     },

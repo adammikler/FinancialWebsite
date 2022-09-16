@@ -31,8 +31,6 @@ let financials = {
         } else if (marketRound >= 13 && marketRound < 14) {
             document.getElementById("marketCap").innerText = "$" + Math.round((MarketCapitalization / 1000000000000) * 100) / 100 + "T"
         }
-    
-        console.log(marketRound);
 
         document.getElementById("symbol").innerText = Symbol;
         document.getElementById("PERatio").innerText = PERatio;
@@ -41,6 +39,25 @@ let financials = {
         document.getElementById("BookValue").innerText = "$" + BookValue;
         document.getElementById("DividendPerShare").innerText = "$" + DividendPerShare;
         document.getElementById("ProfitMargin").innerText = ProfitMargin;
+
+        if (PERatio >= 50) {
+            document.getElementById("BuyRating").innerText = "Sell";
+            var RatingColor = document.getElementById("BuyRating");
+            RatingColor.classList.add("red");
+        } else if (PERatio < 50 && PERatio >= 20) {
+            document.getElementById("BuyRating").innerText = "Hold";
+            var RatingColor = document.getElementById("BuyRating");
+            RatingColor.classList.add("yellow");
+        } else if (PERatio == "None"){
+            document.getElementById("BuyRating").innerText = "Sell";
+            var RatingColor = document.getElementById("BuyRating");
+            RatingColor.classList.add("red");
+        } else {
+            document.getElementById("BuyRating").innerText = "Buy";
+            var RatingColor = document.getElementById("BuyRating");
+            RatingColor.classList.add("green");
+        }
+        
     },
     search: function () {
         this.fetchFinancials(document.getElementById("finance-search-bar").value);

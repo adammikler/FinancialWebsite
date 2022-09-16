@@ -22,13 +22,11 @@ body {
     }
 } 
 
-@media (orientation: landscape) {
-    .card {
-        text-align: center;
-        position: absolute;
-        left: 35%;
-        width: 30%;
-    }
+.card {
+    text-align: center;
+    position: absolute;
+    left: 35%;
+    width: 30%;
 }
 
 .search {
@@ -47,7 +45,7 @@ body {
     width: 250px;
 }
 
-.button {
+.search-button {
     background-color: #3882F6;
     border: none;
     font-size: 1em;
@@ -117,6 +115,10 @@ body {
     color: #1DF561;
 }
 
+.yellow {
+    color: #FF9933;
+}
+
 .background {
     background-color: gray;
     border-radius: 5px;
@@ -125,6 +127,7 @@ body {
 }
 
 footer {
+    position: bottom;
     text-align: center;
     padding-top: 70%;
 }
