@@ -12,7 +12,6 @@ body {
     font-size: 3em;
 }
 
-<<<<<<< HEAD
 @media (orientation: portrait) {
     .card {
         text-align: center;
@@ -21,14 +20,14 @@ body {
         width: 90%;
     }
 } 
-
-=======
->>>>>>> parent of 7cbefa3 (changes layout based on screen orientation)
-.card {
-    text-align: center;
-    position: absolute;
-    left: 35%;
-    width: 30%;
+ 
+@media (orientation: landscape) {
+    .card {
+        text-align: center;
+        position: absolute;
+        left: 35%;
+        width: 30%;
+    }
 }
 
 .search {
