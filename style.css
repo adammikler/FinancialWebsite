@@ -128,8 +128,11 @@ body {
     height: 35%;
 }
 
-footer {
-    position: bottom;
+.coppyright {
+    width: 40%;
+    left: 30%;
+    position:fixed; 
+    bottom:0;
     text-align: center;
-    padding-top: 70%;
+    font-size: .8em;
 }
