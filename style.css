@@ -19,6 +19,15 @@ body {
         left: 5%;
         width: 90%;
     }
+
+    .items {
+        margin: 2% 0%;
+        font-size: 1.1em;
+    }
+
+    .menu-button {
+        font-size: 1.1em;
+    }
 } 
  
 @media (orientation: landscape) {
@@ -27,6 +36,15 @@ body {
         position: absolute;
         left: 35%;
         width: 30%;
+    }
+
+    .items {
+        margin: 2% 0%;
+        font-size: 1.8em;
+    }
+
+    .menu-button {
+        font-size: 1.3em;
     }
 }
 
@@ -65,13 +83,13 @@ body {
     display: flex;
     justify-content: space-between;
     margin: auto;
+    
 }
 
 .menu-button {
     border: none;
     color: white;
     height: 30px;
-    font-size: 1.1em;
     border-radius: 5px 5px 0px 0px;
     cursor: pointer;
 }
@@ -102,11 +120,6 @@ body {
 .box {
     display: flex;
     justify-content: space-between;
-}
-
-.items {
-    margin: 2% 0%;
-    font-size: 1.1em;
 }
 
 .red {
