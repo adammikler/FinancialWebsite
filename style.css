@@ -5,7 +5,6 @@
 body {
     background-color: #1F2937;
     color: white;
-    height: 80%;
 }
 
 .heading {
@@ -79,6 +78,7 @@ body {
     background-color: #404957;
 }
 
+
 .second-button {
     background-color: #3882F6;
 }
@@ -90,7 +90,7 @@ body {
 }
 
 .quote {
-    height: 35.1%;
+    height: 35%;
     margin: auto;
     padding: 10px 20px 20px 20px;
     background-color: #404957;
